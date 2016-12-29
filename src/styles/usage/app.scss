@@ -1,0 +1,5 @@
+@charset "UTF-8";  //防止中文乱码
+
+@import "./core/reset"; //引用yo中的重置样式
+
+@import "./module/m-index.scss";
