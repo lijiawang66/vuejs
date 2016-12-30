@@ -42,9 +42,9 @@
 						border-radius: 0 .1rem .1rem 0;
 						background: #64d985;
 					}
-					&.active{
-						background: #64d985;
-						color:#fff;
+					&:hover{
+						background: #fff;
+						color:#000;
 					}
 				}
 			}
