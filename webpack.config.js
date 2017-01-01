@@ -42,7 +42,7 @@ module.exports = {
 
   devServer: {
     contentBase: __dirname + '/prd',
-    port: 80,
+    port: 8080,
     host: 'localhost',
     /*inline: true,
     hot: true,

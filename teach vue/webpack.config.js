@@ -43,7 +43,7 @@ module.exports = {
 
   devServer: {
     contentBase: __dirname + '/prd',
-    port: 80,
+    port: 8080,
     host: 'localhost',
     proxy: {
       '/api': {
@@ -56,7 +56,7 @@ module.exports = {
   },
 
   plugins: [
-    // new webpack.optimize.UglifyJsPlugin(),
+    //new webpack.optimize.UglifyJsPlugin(),
     new ET('bundle.css')
   ]
 }

@@ -80,7 +80,7 @@
 /* 6 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"m-index\">	<header>		<ul>			<li class=\"yo-ico\">&#xe611;</li>			<li>				<span>热点</span>				<span>关注</span>			</li>			<li class=\"yo-ico\">&#xe631;</li>		</ul>	</header>	<section>	</section>	<footer>		<ul>			<li>				<i class=\"yo-ico\">&#xe604;</i>				<b>首页</b>			</li>			<li>				<i class=\"yo-ico\">&#x348d;</i>				<b>首页</b>			</li>			<li>				<i class=\"yo-ico\">&#xe713;</i>				<b>首页</b>			</li>			<li>				<i class=\"yo-ico\">&#xe604;</i>				<b>首页</b>			</li>			<li>				<i class=\"yo-ico\">&#xe604;</i>				<b>首页</b>			</li>		</ul>	</footer></div>"
+	module.exports = "<div class=\"m-index\">	<header>		<ul>			<li class=\"yo-ico\">&#xe611;</li>			<li>				<span class=\"active\">热点</span>				<span>关注</span>			</li>			<li class=\"yo-ico\">&#xe631;</li>		</ul>	</header>	<section>	</section>	<footer>		<ul>			<li>				<i class=\"yo-ico\">&#xe604;</i>				<b>首页</b>			</li>			<li>				<i class=\"yo-ico\">&#x348d;</i>				<b>发现</b>			</li>			<li>				<i class=\"yo-ico\">&#xe713;</i>			</li>			<li>				<i class=\"yo-ico\">&#xe604;</i>				<b>首页</b>			</li>			<li>				<i class=\"yo-ico\">&#xe604;</i>				<b>我的</b>			</li>		</ul>	</footer></div>"
 
 /***/ }
 /******/ ]);

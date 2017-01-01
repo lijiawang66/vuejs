@@ -773,9 +773,9 @@ a {
           .m-index header ul li:nth-child(2) span:last-child {
             border-radius: 0 .1rem .1rem 0;
             background: #64d985; }
-          .m-index header ul li:nth-child(2) span:hover {
-            background: #fff;
-            color: #000; }
+          .m-index header ul li:nth-child(2) span.active {
+            background: #64d985;
+            color: #fff; }
   .m-index section {
     background: #ccc;
     -webkit-box-flex: 1;
@@ -786,6 +786,15 @@ a {
   .m-index footer {
     height: .44rem;
     background: #fff; }
+    .m-index footer ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex; }
+      .m-index footer ul li {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px; }
   .m-index > * {
     width: 100%; }
 
