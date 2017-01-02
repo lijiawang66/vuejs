@@ -68,10 +68,34 @@
 		}
 	}
 	section{
-		background:yellow;
 		//flex:1;
 		@include flex();
 		width:100%; //手动加
+	    overflow-y: scroll;
+	    ul {
+	      @include flexbox();
+	      @include flex-wrap(wrap);
+	      padding-right: .05rem;
+	      li {
+	        width: 50%;
+	        padding-left: .05rem;
+	        padding-top: .05rem;
+	        i, b {
+	          display: block;
+	        }
+	        i {
+	          width: 100%;
+	          img {
+	            width: 100%;
+	          }
+	        }
+	        b {
+	          //省略号
+	          @include ellipsis(null, 1);
+	          font-weight: normal;
+	        }
+	      }
+	    }
 	}
 	footer{
 		height:.44rem;
