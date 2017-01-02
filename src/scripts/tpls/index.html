@@ -1,4 +1,4 @@
-<div class="m-index">
+<div class="m-index" id = "m-index">
 	<header>
 		<ul>
 			<li class="yo-ico">&#xe611;</li>
@@ -11,62 +11,25 @@
 	</header>
 	<nav>
 		<ul>
-			<li class="active">足球现场</li>
-			<li>现场生活</li>
-			<li>足球美女</li>
+			<li v-on:click="changeTab(index)" :class="{active:index==navIndex}" v-for="(item,index) in nav">{{item}}</li>
 		</ul>
 	</nav>
 	<section>
-		<ul>
-			<li>
-				<i><img src="/images/img1.png" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img2.jpg" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img3.jpg" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img4.jpg" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img1.png" alt=""></i>
-				<b>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img2.jpg" alt=""></i>
-				<b>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img3.jpg" alt=""></i>
-				<b>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img4.jpg" alt=""></i>
-				<b>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img1.png" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img2.jpg" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img3.jpg" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-			<li>
-				<i><img src="/images/img4.jpg" alt=""></i>
-				<b>啦啦啦啦</b>
-			</li>
-		</ul>
+		<div class="swiper-container" id="index-swiper">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+				<ul>
+					<li v-for = "item in list">
+						<i><img v-bind:src="item.imgSrc" alt=""></i>
+						<b>{{item.title}}</b>
+					</li>
+				</ul>
+		    </div>
+		    <div class="swiper-slide">slider2</div>
+		    <div class="swiper-slide">slider3</div>
+		  </div>
+		</div>
+		
 	</section>
 	<footer>
 		<ul>
