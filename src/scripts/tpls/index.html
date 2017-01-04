@@ -15,22 +15,31 @@
 		</ul>
 	</nav>
 	<section>
-		<div class="swiper-container" id="index-swiper">
-		  <div class="swiper-wrapper">
-		    <div class="swiper-slide">
-				<ul>
-					<li v-for = "item in list">
-						<i><img v-bind:src="item.imgSrc" alt=""></i>
-						<b>{{item.title}}</b>
-					</li>
-				</ul>
-		    </div>
-		    <div class="swiper-slide">slider2</div>
-		    <div class="swiper-slide">slider3</div>
-		  </div>
-		</div>
-		
-	</section>
+    <div class="swiper-container" id="index-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="index-scroll">
+          <div>
+            <div class="head">
+              <img src="/images/arrow.png" width="40" height="40"/>
+              <span>下拉刷新...</span>
+            </div>
+            <ul>
+              <li v-for="item in list">
+                <i><img :src="item.imgSrc" /></i>
+                <b>{{item.title}}</b>
+              </li>
+            </ul>
+            <div class="foot">
+              <img src="/images/arrow.png" width="40" height="40"/>
+              <span>上拉加载更多...</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">slider2</div>
+        <div class="swiper-slide">slider3</div>
+      </div>
+    </div>
+  </section>
 	<footer>
 		<ul>
 			<li class="active">
