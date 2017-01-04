@@ -86,6 +86,9 @@
         transition: transform 150ms;
         -webkit-transition: transform 150ms;
     }
+		.head.hide{
+			display: none;
+		}
     .up {
         transform: rotate(360deg) !important;
         -webkit-transform: rotate(360deg) !important;
@@ -104,6 +107,9 @@
         transition: transform 150ms;
         -webkit-transition: transform 150ms;
     }
+		.foot.hide{
+			display: none;
+		}
     .down {
         transform: rotate(180deg) !important;
         -webkit-transform: rotate(180deg) !important;
