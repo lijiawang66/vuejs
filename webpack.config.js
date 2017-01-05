@@ -1,4 +1,4 @@
-//var webpack = require('webpack');//压缩
+var webpack = require('webpack');//压缩
 var ET = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -36,10 +36,18 @@ module.exports = {
       {
         test:/\.html$/,
         loader:'string'
+      },
+      {
+        test:/\.vue$/,
+        loader:'vue'
       }
     ]
   },
-
+  vue:{
+    loader:{
+      js:'babel' //如果代码中有vue，用babel解析
+    }
+  },
   devServer: {
     contentBase: __dirname + '/prd',
     port: 8080,
@@ -56,9 +64,13 @@ module.exports = {
       }
     }
   },
-
+  // resolve:{
+  //   alias:{
+  //     'vue$':'vue/dist/vue.min.js'
+  //   }
+  // },
   plugins: [
-    //new webpack.optimize.UglifyJsPlugin(),//压缩
+    new webpack.optimize.UglifyJsPlugin(),//压缩
     new ET('bundle.css')
   ]
 }
