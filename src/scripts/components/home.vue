@@ -67,7 +67,8 @@ var common = require('../utils/util.common.js');
    },
 
    mounted: function () {
-     fetch('/api/list').then(response => response.json())
+     fetch('/api/list')
+     .then(response => response.json())
      .then(res => {
 
        var that = this;
